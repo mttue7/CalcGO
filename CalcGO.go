@@ -34,41 +34,52 @@ func main() {
 
 	for {
 		fmt.Println("\n~~~ Bem-vindo à Calculadora Simples em Go! ~~~")
-		fmt.Print("\n ===z= MENU DE OPÇÕES ====\n[1] - Soma\n[2] - Subtração\n[3] - Multiplicação\n[4] - Divisão\n[0] - Sair\n")
+		fmt.Print("\n ==== MENU DE OPÇÕES ====\n[1] - Soma\n[2] - Subtração\n[3] - Multiplicação\n[4] - Divisão\n[0] - Sair\n")
 
 		fmt.Print("\nEscolha qual opção deseja: ")
 		fmt.Scanln(&opcao)
 
 		switch opcao {
 		case 1:
-			fmt.Print("Digite o primeiro número: ")
+
+			fmt.Printf("\nVocê escolheu SOMA")
+			fmt.Print("\nDigite o primeiro número: ")
 			fmt.Scanln(&num1)
 
 			fmt.Print("Digite o segundo número: ")
 			fmt.Scanln(&num2)
 
-			fmt.Printf("Resultado: %d\n", sum(num1, num2))
+			resultado := sum(num1, num2)
+			fmt.Printf("Resultado da soma: %d\n", resultado)
 
 		case 2:
-			fmt.Print("Digite o primeiro número: ")
+
+			fmt.Printf("\nVocê escolheu SUBTRAÇÃO")
+			fmt.Print("\nDigite o primeiro número: ")
 			fmt.Scanln(&num1)
 
 			fmt.Print("Digite o segundo número: ")
 			fmt.Scanln(&num2)
 
-			fmt.Printf("Resultado: %d\n", sub(num1, num2))
+			resultado := sub(num1, num2)
+			fmt.Printf("Resultado da subtração: %d\n", resultado)
 
 		case 3:
-			fmt.Print("Digite o primeiro número: ")
+
+			fmt.Printf("\nVocê escolheu MULTIPLICAÇÃO")
+			fmt.Print("\nDigite o primeiro número: ")
 			fmt.Scanln(&num1)
 
 			fmt.Print("Digite o segundo número: ")
 			fmt.Scanln(&num2)
 
-			fmt.Printf("Resultado: %d\n", mult(num1, num2))
+			resultado := mult(num1, num2)
+			fmt.Printf("Resultado da multiplicação: %d\n", resultado)
 
 		case 4:
-			fmt.Print("Digite o primeiro número: ")
+
+			fmt.Printf("\nVocê escolheu DIVISÃO")
+			fmt.Print("\nDigite o primeiro número: ")
 			fmt.Scanln(&num1)
 
 			fmt.Print("Digite o segundo número: ")
